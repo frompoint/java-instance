@@ -168,31 +168,32 @@ public class Main {
         认知：+"为每个字符串变量赋值，公用一个内值，占用一份内存空间；"StringBuffer"每次新建一个新对象，内存分配新的空间，新分配5000份内存空间；
         */
         long startTime5 = System.currentTimeMillis();
-        for(int i=0;i<5000;i++){
-            String result = "This is"
+        String resStr = "";
+        for (int i = 0; i < 5000; i++) {
+            resStr += "This is"
                     + "testing the"
-                    + "difference"+ "between"
-                    + "String"+ "and"+ "StringBuffer";
+                    + "difference" + "between"
+                    + "String" + "and" + "StringBuffer";
         }
         long endTime5 = System.currentTimeMillis();
         System.out.println("字符串连接"
                 + " - 使用 + 操作符 : "
-                + (endTime5 - startTime5)+ " ms");
+                + (endTime5 - startTime5) + " ms");
         long startTime6 = System.currentTimeMillis();
-        for(int i=0;i<5000;i++){
-            StringBuilder result = new StringBuilder();
-            result.append("This is");
-            result.append("testing the");
-            result.append("difference");
-            result.append("between");
-            result.append("String");
-            result.append("and");
-            result.append("StringBuffer");
+        StringBuilder resBuilder = new StringBuilder();
+        for (int i = 0; i < 5000; i++) {
+            resBuilder.append("This is");
+            resBuilder.append("testing the");
+            resBuilder.append("difference");
+            resBuilder.append("between");
+            resBuilder.append("String");
+            resBuilder.append("and");
+            resBuilder.append("StringBuffer");
         }
         long endTime6 = System.currentTimeMillis();
         System.out.println("字符串连接"
                 + " - 使用 StringBuffer : "
-                + (endTime6 - startTime6)+ " ms");
+                + (endTime6 - startTime6) + " ms");
     }
 
     public static String removeCharAt(String s, int pos) {
