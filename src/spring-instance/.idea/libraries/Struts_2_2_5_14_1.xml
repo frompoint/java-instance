@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Struts 2-2.5.14.1" type="struts2">
+    <properties version="2.5.14.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/ognl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/freemarker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/commons-io.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/struts2-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-demo/lib/commons-lang.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

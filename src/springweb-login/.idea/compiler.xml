@@ -6,14 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-demo" />
-        <module name="spring-weblogin" />
+        <module name="springweb-login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-demo" target="1.7" />
-      <module name="spring-weblogin" target="1.5" />
-      <module name="springdemo" target="1.5" />
+      <module name="springweb-login" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
